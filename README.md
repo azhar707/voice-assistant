@@ -24,22 +24,19 @@ A web-based voice assistant application that utilizes speech recognition and tex
 
 
 # Navigate to the project directory:
-
-
       cd voice-assistant
 # Create a virtual environment (optional but recommended):
       python -m venv venv
 # Activate the virtual environment:
-
-**On Windows:**
+On Windows:
       venv\Scripts\activate
-**On macOS/Linux:**
+On macOS/Linux:
       source venv/bin/activate
 # Install the required packages:
       pip install -r requirements.txt
 # Usage
 Run the Flask application:
-   python app.py
+      python app.py
  # Open your web browser and go to:
    http://127.0.0.1:5000
 
