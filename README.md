@@ -28,16 +28,13 @@ A web-based voice assistant application that utilizes speech recognition and tex
 
       cd voice-assistant
 # Create a virtual environment (optional but recommended):
-
-
       python -m venv venv
 # Activate the virtual environment:
 
 **On Windows:**
       venv\Scripts\activate
 **On macOS/Linux:**
-
-   source venv/bin/activate
+      source venv/bin/activate
 # Install the required packages:
       pip install -r requirements.txt
 # Usage
