@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Assistant</title>
+    <script>
+        function listen() {
+            console.log('Sending listen request');
+            fetch('/command', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ action: 'listen' })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Listen response:', data);  // Debugging
+                document.getElementById('response').innerText = 'Heard: ' + data.response;
+            })
+            .catch(error => {
+                console.error('Listen error:', error);
+            });
+        }
+
+        function speak() {
+            var text = document.getElementById('text').value;
+            console.log('Sending speak request:', text);
+            fetch('/command', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ action: 'speak', text: text })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Speak response:', data);  // Debugging
+                document.getElementById('response').innerText = data.response;
+            })
+            .catch(error => {
+                console.error('Speak error:', error);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Voice Assistant</h1>
+    <button onclick="listen()">Listen</button>
+    <input type="text" id="text" placeholder="Enter text for speech">
+    <button onclick="speak()">Speak</button>
+    <p id="response"></p>
+</body>
+</html>
