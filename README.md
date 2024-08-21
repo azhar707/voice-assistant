@@ -21,3 +21,41 @@ A web-based voice assistant application that utilizes speech recognition and tex
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/azhar707/voice-assistant.git
+
+
+# Navigate to the project directory:
+
+
+      cd voice-assistant
+# Create a virtual environment (optional but recommended):
+
+
+      python -m venv venv
+# Activate the virtual environment:
+
+**On Windows:**
+      venv\Scripts\activate
+**On macOS/Linux:**
+
+   source venv/bin/activate
+# Install the required packages:
+      pip install -r requirements.txt
+# Usage
+Run the Flask application:
+   python app.py
+ # Open your web browser and go to:
+   http://127.0.0.1:5000
+
+Interact with the voice assistant by clicking the buttons on the web page to listen to commands and speak responses.
+
+# Contributing
+Feel free to fork the repository, make changes, and submit pull requests. Contributions and feedback are welcome!
+
+# License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+# Acknowledgements
+Flask for the web framework.
+pyttsx3 for text-to-speech functionalities.
+speech_recognition for speech recognition capabilities.
+Google Speech Recognition API for recognizing spoken commands.
