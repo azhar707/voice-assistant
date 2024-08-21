@@ -1,12 +1,23 @@
-# voice-assistant
-This assistant can talk to you or communicate with you using your voice like Google Assistant or Jarvis.
-But, this will not be that advanced, this will totally depend on the if..else.. condition which we will use inside our Program.
+# Voice Assistant
 
-# There are three requirements–
+A web-based voice assistant application that utilizes speech recognition and text-to-speech functionalities. The application allows users to interact with the assistant via voice commands and provides responses through synthesized speech.
 
-# 1. PyAudio — to install pyaudio, go to the terminal and type,
-            pip install pyaudio
-# 2. SpeechRecognition — to install SpeechRecognition, go to the terminal and type,
-            pip install speechrecognition
-# 3. Pyttsx3 — to install Pyttsx3, go to terminal and type,
-            pip install pyttsx3
+## Features
+
+- **Voice Command Recognition**: Uses Google Speech Recognition to understand spoken commands.
+- **Text-to-Speech**: Converts text responses into spoken words using the pyttsx3 library.
+- **Web Interface**: Interact with the voice assistant through a simple web page.
+
+## Technologies Used
+
+- **Python**: Main programming language.
+- **Flask**: Web framework to handle HTTP requests and serve the web application.
+- **pyttsx3**: Text-to-speech conversion library.
+- **speech_recognition**: Speech recognition library to interpret voice commands.
+- **HTML/CSS/JavaScript**: Front-end technologies to build the web interface.
+
+## Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/azhar707/voice-assistant.git
